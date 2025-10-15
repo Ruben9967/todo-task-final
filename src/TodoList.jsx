@@ -3,8 +3,7 @@ import React, { useState } from "react";
 function ToDoList() {
   const [task, setTasks] = useState([]);
   const [newT, setNewT] = useState("");
-  const [completed, setCompleted] = useState([]); // ← no localStorage
-
+  const [completed, setCompleted] = useState([]); 
   function handleInputCng(event) {
     setNewT(event.target.value);
   }
